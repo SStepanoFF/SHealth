@@ -20,8 +20,8 @@ public class SFTPOperations {
             session = jsch.getSession("sutterhealthw", "sftp.keysurvey.com", 22);
 
             //configure authentication
-            session.setConfig("sutterhealthw", "zlz4KB7wYy?");
-            session.setPassword("zlz4KB7wYy?");
+            session.setConfig(Loader.loadProperty("sftpLog"), Loader.loadProperty("sftpPass"));
+            session.setPassword(Loader.loadProperty("sftpPass"));
             java.util.Properties config = new java.util.Properties();
             config.put("StrictHostKeyChecking", "no");
             session.setConfig(config);
