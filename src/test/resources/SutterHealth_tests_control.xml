@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="SutterHealth Tests" verbose="1"  >
+
+    <test name="Create Project" preserve-order="true" enabled="true">
+        <classes>
+            <class name="CreateProjectTest"/>
+        </classes>
+    </test>
+    <test name="LoginPortal" preserve-order="true" enabled="true">
+        <classes>
+            <class name="portalTests.RFPPortalOperationTest"/>
+        </classes>
+    </test>
+</suite>
+
